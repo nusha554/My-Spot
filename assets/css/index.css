@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+/* Have a Spotify Themed Background */
+html, body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#topContainer {
+  min-height: 100%;
+  width: 100%;   
+  height: 90%;
+}
+
+.song {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Now Playing Bar */
+#nowPlayingBarContainer {
+  width: 100%;
+  background-color: transparent;
+  bottom: 0;
+  position: fixed;
+  min-width: 620px;
+}
+
+#nowPlayingBar {
+  height: 90px;
+  box-sizing: border-box;
+}
+
+#nowPlayingLeft,
+#nowPlayingRight {
+  width: 30%;
+  min-width: 180px;
+}
+
+#nowPlayingRight {
+  position: relative;
+  margin-top: 16px;
+}
+
+#nowPlayingCenter {
+  width: 40%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#nowPlayingBar .content {
+  width: 100%;
+}
+
+.playerControls .button {
+  margin: 0 auto;
+  display: table;
+}
+
+.controlButton {
+  background-color: transparent;
+  border: none;
+  vertical-align: middle;
+}
+
+.controlButton img {
+  width: 25px;
+  height: 25px;
+}
+
+.controlButton.play img,
+.controlButton.pause img {
+  width: 32px;
+  height: 32px;
+}
+
+.controlButton:hover {
+  cursor: pointer;
+
+}
+
+.progressTime {
+  color: #a0a0a0;
+  font-size: 11px;
+  font-weight: 40px;
+  text-align: center;
+}
+
+.current {
+  padding-right: 10px;
+}
+
+.remaining {
+  padding-left: 10px;
+}
+
+.playbackBar {
+  display: flex;
+}
+
+.progressBar {
+  width: 100%;
+  height: 12px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.progressBarBg {
+  background-color: #404040;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+
+.progress {
+  background-color: #a0a0a0;
+  height: 4px;
+  width: 0;
+  border-radius: 2px;
+}
+
+.playbackBar .progressBar {
+  margin-top: 3px;
+}
+
+.volumeBar {
+  width: 180px;
+  position: absolute;
+  right: 0;
+}
+
+.volumeBar .progressBar {
+  width: 125px;
+}
+
+
+#navBarContainer {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+
+.navBar {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.logo {
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: .5s ease-in-out;
+    -moz-filter: grayscale(100%); 
+    -moz-transition: .5s ease-in-out;
+    -o-filter: grayscale(100%); 
+    -o-transition: .5s ease-in-out;
+}
+
+
+.navBar .group {
+  border-top: 1px solid #a0a0a0;
+  padding: 10px 0;
+}
+
+
+.navItem  {
+  padding: 60px 0;
+  font-size: 10px;
+  font-weight: 700;
+  display: black;
+  letter-spacing: 4px;
+  text-decoration: none; 
+  text-align: center;
+  position: relative;
+}
+
+.navItem :hover{
+  text-decoration: none;
+  color:  #1db954;
+}
+
+.searching {
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.navItemLink {
+  color: #FCFDFE;
+  text-decoration: none;
+  font-size: 100%;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+
+.navItemLink .icon {
+  right: 0;
+  top: 6px;
+  width: 25px;
+  margin-left: 30px;
+  padding-left: 4px;
+} 
+
+ #navbar{
+    background-color: transparent;
+    height: 120px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+ }
+
+ .menu-bars{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: #fff;
+ }
+
+ #nav-menu {
+    background: rgba(0, 0, 0, 0.4);
+    width: 191px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+ }
+
+ #nav-menu.active {
+  left: 0;
+  transition: 350ms;
+ }
+
+ .nav-text {
+   display: flex;
+    justify-content: start;
+    list-style: none;
+    height: 80px;
+    margin: -1px 0 33px 19px;
+ }
+
+ .nav-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 100%;
+    margin-left: -2rem;
+ }
+
+ .nav-text:hover {
+    cursor: pointer;
+ }
+
+ .nav-menu-items {
+    width: 100%;
+    margin-top: 9px;
+    margin-left: -18px;
+    margin-bottom: 13px;
+ }
+
+.nav-icon {
+    padding: 20 30 10 0;
+    margin: 0 -7 12;
+    color: #909090;
+    height:53px;
+    width: 54px;
+}
+
+ #MySpot-logo {
+    padding-right: -1.8rem;
+    height: 65px;
+    width: 92px;
+    margin: -6 0 -22;
+ }
+
+ #navbar-toggle {
+/*  background-color: #212121;*/
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 -30 0;
+ }
+
+#search-section {
+  margin: 56px -8px 22px 20px;
+}
+
+hr {
+  display: none;
+    margin: 122 0 10 -100;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.fa-bars {
+  color: #fff;
+  padding: 5px 18px;
+}
+
+.fa-sign-out-alt {
+   color: #fff;
+   font-size: 1.7em;
+   right: 3%;
+   position: absolute;
+   margin: -16px;
+}
+
+.nav-section  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.fa-sign-out-alt:hover, .fa-question-circle:hover{
+     cursor: pointer;
+}

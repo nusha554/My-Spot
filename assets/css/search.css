@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+html,body {
+  background-color: black;
+  background-size: cover;
+  background-image: url(../img/background31.jpg);
+  font-family: 'Montserrat', sans-serif;
+}
+}
+
+
+/* Search header */
+
+#searchHeader h1 {
+ /* color: #FFFFFF; /*#5EA8A7;*/*/
+  font-size: 20px;
+  font-weight: 700px;
+  text-align: center;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #ee6352;
+  --clr-body: #333;
+  --clr-bg: #ddd;
+}
+
+/* Search input bar */
+.searchContainer {
+
+  text-align: center;
+  padding: 10px 50px 9px 280px;
+  background-color: transparent;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 70 0 0 -170px;
+/*  display: inline;
+*//*    float: right;*/
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -3%;
+}
+
+.searchBar {
+    position: relative;
+    width: 60%;
+    height: 19px;
+    margin-left: -615px;
+    margin-top: -21px;
+    padding-top: 20px;
+}
+
+
+
+.searchInput {
+    text-align: left;
+    width: 83%;
+    height: 38px;
+    background-color: #FFF !important;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: #262321;
+    font-weight: 700px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 0px 85px;
+    outline: none;
+    border-radius: 25px;
+    margin-left: 46%;
+    margin-top: -4%;
+}
+
+#navBarContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+
+.searchResult {
+   width: 83.4%;
+    margin: -5.1% -21.1% -45% 3%;
+  }
+
+
+.searchInput::placeholder {
+  color: #807671;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 700px;
+}
+
+.fa-microphone{
+      min-width: 126px;
+    font-size: 21px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    color: #262321;
+    pointer-events: painted;
+    margin: -3% 45.5%;
+}
+
+.fa-search{
+     min-width: 126px;
+    font-size: 21px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    color: #262321;
+    pointer-events: painted;
+    margin: -3% 40.5%;
+  }
+
+.fa-search:focus ~ .searchInput{
+  border: none;
+  border-radius: 100px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  color:  #59524f;
+  text-align: center;
+}
+
+
+.fa-times {
+    min-width: 126px;
+    font-size: 25px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    color: #262321;
+    pointer-events: painted;
+    margin: -3% 115.5%;
+  }
+
+.fa-times:hover, .fa-search:hover, .fa-microphone:hover  {
+  cursor: pointer;
+}
+
+.searchInput:focus{
+  border: none;
+  background-color: #257985;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  color:  #59524f;
+  font-size: 14px;
+}
+
+.trackList {
+      margin-top: 40px;
+}
+.header {
+    font-family: 'Raleway', sans-serif !important;
+    color: #FFFF;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin-left: -18%;
+    margin-top: -4.3%;
+}
+
+
+#song-list {
+    text-align: left;
+    background-color: #5EA8A7;
+    border: none;
+    letter-spacing: 2px;
+    width: 100%;
+    background-color: transparent;
+    display: unset;
+}
+
+
+#song_0, #song_1, #song_2, #song_3,#song_4 {
+    letter-spacing: 3px;
+    font-size: 10px;
+    font-weight: 700px;
+    background-color: #212121;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0px 18%;
+    padding: 13px;
+    color: #fff;
+}
+
+
+#song_0:hover, 
+#song_1:hover, 
+#song_2:hover, 
+#song_3:hover,
+#song_4:hover {
+  letter-spacing: 5.4px;
+  background-color: #257985 !important;
+  cursor: pointer;
+}
+
+#songLink {
+  text-decoration: none; 
+}
+
+
+
+.getPlaylistButton {
+  width: 11% !important;
+  height: 42px !important;
+  margin-left: 74% !important;
+  margin-top: 0.2% !important;
+  display: inline;
+  float: left;
+}
+
+.navItem {
+  padding: none !important;
+}

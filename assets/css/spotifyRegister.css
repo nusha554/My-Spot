@@ -1,0 +1,71 @@
+#questionSymbol {
+	font-size: 150%;
+	display:inline-block !important;
+	margin: 1% -13% 10% 14%;
+}
+
+#headerBottom {
+	display:inline-block; 
+}
+
+.spotifyUser {
+	margin-top: 10% !important;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popUpText {
+      visibility: hidden;
+    width: 446px;
+    height: 68px;
+    font-size: 91%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    margin: 70px 36px;
+    padding: 15px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: -150;
+    left: -340;
+}
+
+/* Popup arrow */
+.popup .popUpText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
