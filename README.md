@@ -1,4 +1,4 @@
-# My-Spot
+# My-Spot OverView
 Generate Spotify playlists based on your selected song.
 
 1. Sign up and login with your email.
