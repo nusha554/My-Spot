@@ -1,5 +1,5 @@
 # My-Spot OverView
-Generate Spotify playlists based on your selected song.
+Spotify playlists generator based on your favorites.
 
 1. Sign up and login with your email.
  <img width="958" alt="login" src="https://user-images.githubusercontent.com/57936085/150671874-0298190b-fb86-431c-b0c2-db9c4e5a8ff1.PNG">
