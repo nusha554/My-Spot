@@ -9,7 +9,6 @@
 	include("includes/handlers/register-handler.php");
 	include("includes/handlers/login-handler.php");
 
-	// get Input value to save it between registration tries 
 	function getInputValue($name) {
 		if (isset($_POST[$name])) {
 			echo $_POST[$name];
