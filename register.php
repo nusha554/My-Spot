@@ -15,7 +15,6 @@
 			echo $_POST[$name];
 		}
 	}
-
 ?>
 
 
